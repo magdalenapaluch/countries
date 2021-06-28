@@ -3,7 +3,7 @@ import { useQuery } from "@apollo/client";
 import { GET_COUNTRIES_QUERY } from "../graphql/Queries";
 import {Link} from 'react-router-dom'
 
-function Home() {
+function Countires() {
   const { loading, error, data} = useQuery(GET_COUNTRIES_QUERY)
 
   if (error) return <h1> Error found</h1>;
@@ -19,4 +19,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Countires;

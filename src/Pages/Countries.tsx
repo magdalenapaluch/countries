@@ -1,8 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import Country from "../components/Country";
+import {Data} from "../models/data";
 
-function Countires(props) {
+const Countires: React.FC<{ data: Data }> = (props) => {
 	const params = useParams();
 
 	let continent = props.data.continents.find((obj) => {
@@ -14,9 +15,7 @@ function Countires(props) {
 				continent.countries.map((country) => (
 					<Country
 						key={country.name}
-						name={country.name}
-						emoji={country.emoji}
-						languages={country.languages}
+						country={country}
 					></Country>
 				))}
 		</div>

@@ -10,19 +10,18 @@ import { GET_COUNTRIES_QUERY } from "./graphql/Queries";
 function App() {
 	const { error, data } = useQuery(GET_COUNTRIES_QUERY);
 	if (error) return <h1> Error found</h1>;
-
 	return (
-			<Switch>
-				<Route path="/" exact>
-					{data && <Home />}
-				</Route>
-				<Route path="/continents" exact>
-					{data && <Continents data={data} />}
-				</Route>
-				<Route path="/continents/:code">
-					{data && <Countries data={data} />}
-				</Route>
-			</Switch>
+		<Switch>
+			<Route path="/" exact>
+				<Home />
+			</Route>
+			<Route path="/continents" exact>
+				{data && <Continents data={data} />}
+			</Route>
+			<Route path="/continents/:code">
+				{data && <Countries data={data} />}
+			</Route>
+		</Switch>
 	);
 }
 

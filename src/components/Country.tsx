@@ -1,12 +1,13 @@
 import React from "react";
 import './Country.css'
+import { CountryType } from "../models/data";
 
-function Country(props) {
+const Country: React.FC<{ country: CountryType }> = (props) => {
 	return (
 		<div className="country box">
-			{props.name && <span className="box__item">{props.name}</span>}
-			{props.emoji &&<span className="box__item">{props.emoji}</span>}
-			{props.languages[0] ? <span className="box__item">{props.languages[0].name}</span> : <span className="box__item">N/A</span>}
+			{props.country.name && <span className="box__item">{props.country.name}</span>}
+			{props.country.emoji &&<span className="box__item">{props.country.emoji}</span>}
+			{props.country.languages[0] ? <span className="box__item">{props.country.languages[0].name}</span> : <span className="box__item">N/A</span>}
 		</div>
 	);
 }

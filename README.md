@@ -1,6 +1,11 @@
-# List the Countries by continent
+# List the Countries by Continent
 
-Simple app for listing countries by continent created with Create React App, using styled components, graphQL, Apollo Client, React Router and Typescript.
+Simple app for listing countries by continent created with Create React App, using: 
+* Typescript
+* React Router 
+* graphQL
+* Apollo Client 
+* styled components
 
 ## Available Scripts
 

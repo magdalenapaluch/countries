@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import Country from "../components/Country";
+import GridContainer from "../components/GridContainer";
 import { Data } from "../models/data";
 
 const Countires: React.FC<{ data: Data }> = (props) => {
@@ -10,12 +11,12 @@ const Countires: React.FC<{ data: Data }> = (props) => {
 		return obj.code === params.code;
 	});
 	return (
-		<div className="countries">
+		<GridContainer>
 			{continent &&
 				continent.countries.map((country) => (
 					<Country key={country.name} country={country}></Country>
 				))}
-		</div>
+		</GridContainer>
 	);
 };
 

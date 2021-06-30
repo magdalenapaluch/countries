@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import Home from "./Pages/Home";
 import Continents from "./Pages/Continents";
 import Countries from "./Pages/Countries";

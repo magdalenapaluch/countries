@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 import { Data } from "../models/data";
 
 const Continents: React.FC<{ data: Data }> = (props) => {
-	console.log(props.data.continents)
 	return (
-		
 		<div className="continents">
 			{props.data &&
 				props.data.continents.map((continent) => (
@@ -20,6 +18,6 @@ const Continents: React.FC<{ data: Data }> = (props) => {
 				))}
 		</div>
 	);
-}
+};
 
 export default Continents;

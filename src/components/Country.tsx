@@ -1,5 +1,4 @@
 import React from "react";
-import './Country.css'
 import { CountryType } from "../models/data";
 
 const Country: React.FC<{ country: CountryType }> = (props) => {

@@ -12,8 +12,8 @@ const Continents: React.FC<{ data: Data }> = (props) => {
 						to={`/continents/${continent.code}`}
 						className="continent box"
 					>
-						<span className="box__item">{continent.code}</span>
-						<span className="box__item">{continent.name}</span>
+						<p>{continent.name}</p>
+						<p>{continent.code}</p>
 					</Link>
 				))}
 		</div>

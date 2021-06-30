@@ -1,12 +1,14 @@
 import React from "react";
-import {Link} from 'react-router-dom'
-function Home() {
+import { Link } from "react-router-dom";
 
-  return (
-    <div className="home">
-      <Link to="/continents" className="box">Continents</Link>
-    </div>
-  );
+function Home() {
+	return (
+		<div className="home">
+			<Link to="/continents" className="box">
+				Continents
+			</Link>
+		</div>
+	);
 }
 
 export default Home;

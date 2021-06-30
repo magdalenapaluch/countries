@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# List the Countries by continent
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple app for listing countries by continent created with Create React App, using styled components, graphQL, Apollo Client, React Router and Typescript.
 
 ## Available Scripts
 
